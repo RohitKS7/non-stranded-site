@@ -79,7 +79,7 @@ section.section-2 {
 }
 
 h3.intro-head {
-    font-size: clamp(1rem, calc(100vw - 89vw), 6rem);
+    font-size: clamp(1rem, calc(100vw - 89vw), 5rem);
     font-family: 'Viga', sans-serif;
     margin-bottom: 2rem;
 }
@@ -160,7 +160,7 @@ section.section-3 {
 h3.support-head {
     color: #ffbd59;
     font-family: 'Viga', sans-serif;
-    font-size: clamp(1rem, calc(100vw - 89vw), 6rem);
+    font-size: clamp(1rem, calc(100vw - 89vw), 5rem);
     margin-bottom: 2rem;
 }
 
@@ -329,7 +329,7 @@ section.section-5.full-screen {
 h3.call-to-action-head {
     color: #ffbd59;
     font-family: 'Viga', sans-serif;
-    font-size: clamp(1rem, calc(100vw - 89vw), 6rem);
+    font-size: clamp(1rem, calc(100vw - 89vw), 5rem);
     margin-bottom: 2rem;
 }
 
@@ -415,7 +415,7 @@ section.section-6 {
 
 .head {
     color: black;
-    font-size: clamp(1rem, calc(100vw - 89vw), 6rem);
+    font-size: clamp(1rem, calc(100vw - 89vw), 5rem);
     font-weight: bolder;
     font-family: 'Blanka', sans-serif;
     width: min-content;
@@ -664,7 +664,7 @@ section.section-7.full-screen {
 
 .project-head {
   color: #ffbd59;
-  font-size: clamp(1rem, calc(100vw - 89vw), 6rem);
+  font-size: clamp(1rem, calc(100vw - 89vw), 5rem);
   font-weight: bolder;
   font-family: 'Blanka', sans-serif;
   width: min-content;
@@ -923,7 +923,7 @@ section.section-8.full-screen {
 
 .services-container > div > h2 {
   color: #000000;
-  font-size: clamp(1rem, calc(100vw - 89vw), 6rem);
+  font-size: clamp(1rem, calc(100vw - 89vw), 5rem);
   font-weight: bolder;
   font-family: 'Blanka', sans-serif;
   width: min-content;
