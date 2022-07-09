@@ -12,6 +12,14 @@ font-family: 'Ramabhadra', sans-serif;
 font-family: 'Viga', sans-serif; 
 font-family: 'Blanka';*/
 
+:root {
+  /* previous color of gold is  => #FFBD59 and grey is pure black */
+  --gold: #ebc680;
+  --grey: #1a1d22;
+  --head: clamp(1rem, calc(100vw - 89vw), 6rem);
+  --para: clamp(1rem, calc(100vw - 94vw), 2rem);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -65,7 +73,7 @@ section.section-1 {
 /*  Intro section  */
 
 section.section-2 {
-  background: #FFBD59;
+  background: var(--gold);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,14 +94,14 @@ section.section-2 {
 }
 
 h3.intro-head {
-  font-size: clamp(1rem, calc(100vw - 89vw), 6rem);
+  font-size: var(--head);
   font-family: 'Viga', sans-serif;
   margin-bottom: 2rem;
 }
 
 .intro-para-container>* {
   padding: 1rem 0;
-  font-size: clamp(1rem, calc(100vw - 94vw), 2rem);
+  font-size: var(--para);
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   line-height: clamp(30px, 6vw, 45px);
@@ -139,7 +147,7 @@ span.feel-color {
 /*  section 3 */
 
 section.section-3 {
-  background: #000000;
+  background: var(--grey);
   height: auto;
   width: auto;
   display: flex;
@@ -169,18 +177,18 @@ section.section-3 {
 }
 
 h3.support-head {
-  color: #ffbd59;
+  color: var(--gold);
   font-family: 'Viga', sans-serif;
-  font-size: clamp(1rem, calc(100vw - 89vw), 6rem);
+  font-size: var(--head);
   margin-bottom: 2rem;
 }
 
 p.support-para {
   padding: 1rem 0;
-  font-size: clamp(1rem, calc(100vw - 94vw), 2rem);
+  font-size: var(--para);
   font-family: 'Roboto', sans-serif;
   line-height: clamp(30px, 6vw, 45px);
-  color: #ffbd59;
+  color: var(--gold);
 }
 
 @media screen and (min-width: 992px) {
@@ -222,7 +230,7 @@ p.support-para {
 /*  section 4 */
 
 section.section-4.full-screen {
-  background: #FFBD59;
+  background: var(--gold);;
   display: flex;
   height: auto;
   justify-content: center;
@@ -243,7 +251,7 @@ section.section-4.full-screen {
 
 h2.overview-heading {
   font-family: 'Blanka';
-  font-size: clamp(1rem, calc(100vw - 89vw), 5rem);
+  font-size: var(--head);
   letter-spacing: 3px;
   text-align: center;
 }
@@ -319,7 +327,7 @@ p.service-para {
 /*  section 5 */
 
 section.section-5.full-screen {
-  background: #000000;
+  background: var(--grey);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -345,18 +353,18 @@ section.section-5.full-screen {
 }
 
 h3.call-to-action-head {
-  color: #ffbd59;
+  color: var(--gold);
   font-family: 'Viga', sans-serif;
-  font-size: clamp(1rem, calc(100vw - 89vw), 6rem);
+  font-size: var(--head);
   margin-bottom: 2rem;
 }
 
 p.call-to-action-para {
   padding: 1rem 0;
-  font-size: clamp(1rem, calc(100vw - 94vw), 2rem);
+  font-size: var(--para);
   font-family: 'Roboto', sans-serif;
   line-height: clamp(30px, 6vw, 45px);
-  color: #ffbd59;
+  color: var(--gold);
 }
 
 .call-to-action-btn {
@@ -365,8 +373,8 @@ p.call-to-action-para {
 
 .call-to-action-btn a {
   text-decoration: none;
-  color: #000000;
-  background: #ffbd59;
+  color: var(--grey);
+  background: var(--gold);;
   padding: 1rem;
   margin: 0;
   font-family: 'Palanquin Dark', sans-serif;
@@ -418,7 +426,7 @@ p.call-to-action-para {
 /* Section 6 = team memebers */
 
 section.section-6 {
-  background: #ffbd59;
+  background: var(--gold);;
   height: auto;
 }
 
@@ -433,8 +441,8 @@ section.section-6 {
 }
 
 .head {
-  color: black;
-  font-size: clamp(1rem, calc(100vw - 89vw), 6rem);
+  color: var(--grey);
+  font-size: var(--head);
   font-weight: bolder;
   font-family: 'Blanka';
   width: min-content;
@@ -465,13 +473,13 @@ section.section-6 {
   top: 0;
   position: absolute;
   box-sizing: border-box;
-  background-color: #000;
+  background-color: var(--grey);
   padding: 30px;
   width: 300px;
   text-align: center;
   transition: transform 0.4s;
   transform-style: preserve-3d;
-  border: 5px #ffbd59 solid;
+  border: 5px var(--gold) solid;
   -webkit-transform-style: preserve-3d;
   user-select: none;
   cursor: pointer;
@@ -713,7 +721,7 @@ section.section-6 {
 
 
 section.section-7.full-screen {
-  background: #000;
+  background: var(--grey);
   height: auto;
 }
 
@@ -725,8 +733,8 @@ section.section-7.full-screen {
 }
 
 .project-head {
-  color: #ffbd59;
-  font-size: clamp(1rem, calc(100vw - 89vw), 6rem);
+  color: var(--gold);
+  font-size: var(--head);
   font-weight: bolder;
   font-family: 'Blanka';
   width: min-content;
@@ -741,9 +749,9 @@ section.section-7.full-screen {
   margin: 2rem 2rem 4rem 2rem;
   overflow: hidden;
   position: relative;
-  border: 5px #000000 solid;
+  border: 5px var(--grey) solid;
   border-radius: 16px;
-  box-shadow: -5px 5px #ffbd59, -10px 10px #000, -15px 15px #ffbd59;
+  box-shadow: -5px 5px var(--gold), -10px 10px var(--grey), -15px 15px var(--gold);
 }
 
 svg {
@@ -779,7 +787,7 @@ button:focus {
 }
 
 circle {
-  stroke: #ffbd59;
+  stroke: var(--gold);
   fill: none;
   transition: 0.3s;
 }
@@ -808,13 +816,13 @@ circle {
 
 .right {
   margin-right: 1rem;
-  background-color: #ffbd59;
+  background-color: var(--gold);
   transition: 0.5s;
 }
 
 .left {
   margin-left: 1rem;
-  background-color: #ffbd59;
+  background-color: var(--gold);
   transition: 0.5s;
 }
 
@@ -922,7 +930,7 @@ circle {
   position: absolute;
   width: 400%;
   height: 100%;
-  background: #000;
+  background: var(--grey);
   display: inline-flex;
   overflow: hidden;
 }
@@ -1023,14 +1031,14 @@ circle {
 /* Section-8 => Services section */
 
 section.section-8.full-screen {
-  background: #ffbd59;
+  background: var(--gold);;
   height: auto;
   overflow: hidden;
 }
 
 .services-container>div>h2 {
-  color: #000000;
-  font-size: clamp(1rem, calc(100vw - 89vw), 6rem);
+  color: var(--grey);
+  font-size: var(--head);
   font-weight: bolder;
   font-family: 'Blanka';
   width: min-content;
@@ -1047,7 +1055,7 @@ section.section-8.full-screen {
 }
 
 .service-card {
-  background: black;
+  background: var(--grey);
   padding: 0 2rem;
   height: calc(50vh - 20vh);
   width: calc(100vw - 40vw);
@@ -1059,15 +1067,20 @@ section.section-8.full-screen {
 }
 
 .service-card h3 {
-  color: #ffbd59;
+  color: var(--gold);
   font-size: clamp(1rem, 1.5vw, 2rem);
   font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (min-width: 992px) {
-  .services-group-container {
+  .services-group-container-1 {
     display: flex;
     width: calc(100vw - 17vw);
+  }
+
+  .services-group-container-2 {
+    display: flex;
+    width: calc(100vw - 44vw);
   }
 
   .services-container>div>h2 {
