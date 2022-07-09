@@ -14,10 +14,12 @@ font-family: 'Blanka';*/
 
 :root {
   /* previous color of gold is  => #FFBD59 and grey is pure black */
-  /* --gold: #ebc680;
-  --grey: #1a1d22; */
-  --gold: #d4af69;
-  --grey: #343840;
+  /* below colores my prefrence */
+  --gold: #ebc680;
+  --grey: #1a1d22;
+  /*  below colors mansa prefrence */
+  /* --gold: #d4af69;
+  --grey: #343840; */
   --head: clamp(1rem, calc(100vw - 89vw), 6rem);
   --para: clamp(1rem, calc(100vw - 94vw), 2rem);
 }
