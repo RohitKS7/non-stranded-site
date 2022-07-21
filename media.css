@@ -1,0 +1,370 @@
+@media screen and (max-width: 922px) {
+
+    .section-1-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 90%;
+        justify-content: space-evenly;
+    }
+
+    .hero-section {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    .cube1 {
+        position: relative;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .cube2 {
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .navigation-menu {
+        display: flex;
+        align-items: center;
+        /* position: fixed; */
+        /*  uncommnet above code when you use gsap to change color on every section */
+    }
+
+    .main-navigation {
+        display: flex;
+        flex-direction: row;
+        background: #ebc680;
+        height: auto;
+        top: 0;
+        border-radius: 0 0 40pc 40pc;
+    }
+
+    /* Hiding the hamburger icon on larger screens */
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    /* Ensuring that if the hamburger menu is active but
+    the screen becomes larger, the display will 
+    change to display items in a row instead of a column*/
+
+    #menu-toggle:checked+.main-navigation {
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .intro-section {
+        margin: 5rem;
+    }
+
+    h3.intro-head {
+        font-size: clamp(1rem, calc(100vw - 95vw), 6rem);
+    }
+
+    .intro-container {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5rem;
+        margin-inline: 0;
+    }
+
+    .intro-container>* {
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+
+    .intro-para-container>* {
+        padding: 1rem 0;
+        font-size: clamp(1rem, 1.5vw, 4rem);
+        line-height: clamp(30px, 2vw, 45px);
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .support-section {
+        margin: 5rem;
+    }
+
+    .support-container {
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .support-contianer-img {
+        margin-bottom: 0;
+        width: 30%;
+        text-align: center;
+    }
+
+    .support-para-container {
+        margin-inline: 0rem;
+        position: relative;
+        width: 50%;
+    }
+
+    h3.support-head {
+        font-size: clamp(1rem, calc(100vw - 95vw), 6rem);
+    }
+
+    p.support-para {
+        font-size: clamp(1rem, 1.5vw, 3rem);
+        line-height: clamp(30px, 2.5vw, 45px);
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .service-overview-contianer {
+        margin: 5rem;
+    }
+
+    .overview-head {
+        margin: 0 0 5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .service-check-container {
+        flex-direction: row;
+    }
+
+    .web-dev-check {
+        margin: 3rem 0 0;
+    }
+
+    .check-icon img {
+        height: 7rem;
+    }
+
+    h2.overview-heading {
+        width: min-content;
+    }
+
+    p.service-para {
+        font-size: clamp(1rem, 1.5vw, 3rem);
+    }
+
+    .check-icon {
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .call-to-action-section {
+        height: auto;
+        margin: 5rem;
+    }
+
+    .call-to-action-container {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .call-to-action-para-container {
+        height: auto;
+        position: relative;
+        margin-inline: 0;
+        margin-bottom: 0;
+        width: 50%;
+    }
+
+    .call-to-action-contianer-img {
+        width: 30%;
+        text-align: center;
+    }
+
+    h3.call-to-action-head {
+        margin-bottom: 1rem;
+        font-size: clamp(1rem, calc(100vw - 95vw), 6rem);
+    }
+
+    p.call-to-action-para {
+        font-size: clamp(1rem, 1.5vw, 3rem);
+        line-height: clamp(30px, 3vw, 45px);
+    }
+}
+
+
+/*=====================================================================================
+                MEDIA QUERIES
+=======================================================================================*/
+@media screen and (min-width: 992px) {
+
+    .team-section-container {
+        min-height: auto;
+    }
+
+    .testimonials .item {
+        width: 450px;
+    }
+
+    .head {
+        margin: 3rem 1rem 5rem 1rem;
+    }
+
+    .team-slider {
+        margin-bottom: 5rem;
+    }
+
+}
+
+
+@media (hover: hover) {
+
+    .left:hover {
+        background-color: transparent;
+    }
+
+    .right:hover {
+        background-color: transparent;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .circle10 {
+        transition-delay: 0.05s;
+        cx: 90%;
+    }
+
+    .circle11 {
+        transition-delay: 0.1s;
+        cx: 90%;
+
+    }
+
+    .circle12 {
+        transition-delay: 0.15s;
+        cx: 90%;
+
+    }
+
+    .circle13 {
+        transition-delay: 0.2s;
+        cx: 90%;
+
+    }
+
+    .circle14 {
+        transition-delay: 0.25s;
+        cx: 90%;
+
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .parent {
+        width: calc(100vw - 50vw);
+        height: calc(100vh - 45vh);
+        margin: 2rem 2rem 5rem 2rem;
+    }
+
+    svg {
+        width: calc(100vw - 50vw);
+        height: calc(100vh - 45vh);
+    }
+
+    .btns {
+        width: calc(100vw - 50vw);
+    }
+
+    .project-head {
+        margin: 2rem 0 5rem;
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
+    .services-group-container-1 {
+        display: flex;
+        width: calc(100vw - 17vw);
+    }
+
+    .services-group-container-2 {
+        display: flex;
+        width: calc(100vw - 44vw);
+    }
+
+    .services-container>div>h2 {
+        margin-bottom: 5rem;
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .contact-heading h2 {
+        font-size: clamp(1rem, calc(100vw - 95vw), 6rem);
+        margin-bottom: 0;
+    }
+
+    p.contact-para {
+        font-size: clamp(1rem, 1.3rem, 3rem);
+        line-height: clamp(30px, 2vw, 45px);
+    }
+
+    .contact-container {
+        flex-direction: row;
+        margin: 4rem;
+    }
+
+    .contact-container-left {
+        width: 60%;
+        margin-right: 2rem;
+        margin-left: 0;
+    }
+
+    .contact-container-right {
+        margin-left: 2rem;
+        margin-right: 0;
+    }
+
+    .contact-icon {
+        margin: 15px;
+        font-size: 15px;
+    }
+
+    .contact-form-heading h3 {
+        font-size: clamp(1rem, calc(100vw - 96vw), 6rem);
+        margin-top: 1rem;
+    }
+
+    .contact-form-para h4 {
+        font-size: clamp(1rem, 1.5vw, 3rem);
+    }
+
+    .fas:before {
+        padding: 12px;
+    }
+
+    .fa-map-marker::before {
+        padding: 12px 14px;
+    }
+}
