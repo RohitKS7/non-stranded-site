@@ -6,7 +6,7 @@
     url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"), 
     url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"), 
     url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka") format("svg");
-  font-display: swap;
+/*   font-display: swap; */
 }
 
 
@@ -304,7 +304,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .main-heading {
-  font-family: 'Blanka';
+  font-family: 'Blanka' !important;
   width: min-content;
   text-align: center;
   font-size: clamp(1rem, 10vw, 10rem);
@@ -429,7 +429,7 @@ section.section-4.full-screen {
 }
 
 h2.overview-heading {
-  font-family: 'Blanka';
+  font-family: 'Blanka' !important;
   font-size: var(--head);
   letter-spacing: 3px;
   text-align: center;
@@ -557,7 +557,7 @@ section.section-6 {
   color: var(--grey);
   font-size: var(--head);
   font-weight: bolder;
-  font-family: 'Blanka';
+  font-family: 'Blanka' !important;
   width: min-content;
   letter-spacing: 5px;
   text-align: center;
@@ -826,7 +826,7 @@ section.section-7.full-screen {
   color: var(--gold);
   font-size: var(--head);
   font-weight: bolder;
-  font-family: 'Blanka';
+  font-family: 'Blanka' !important;
   width: min-content;
   letter-spacing: 5px;
   text-align: center;
@@ -1067,7 +1067,7 @@ section.section-8.full-screen {
   color: var(--grey);
   font-size: var(--head);
   font-weight: bolder;
-  font-family: 'Blanka';
+  font-family: 'Blanka' !important;
   width: min-content;
   letter-spacing: 5px;
   text-align: center;
