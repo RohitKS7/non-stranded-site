@@ -1,8 +1,12 @@
 @font-face {
   font-family: "Blanka";
-  src: local() url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"),
+   src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot");
+  src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"), 
     url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka") format("svg");
-  font-display: swap;
+/*   font-display: swap; */
 }
 
 
@@ -300,7 +304,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .main-heading {
-  font-family: 'Blanka', sans-serif;
+  font-family: 'Blanka' !important;
   width: min-content;
   text-align: center;
   font-size: clamp(1rem, 10vw, 10rem);
@@ -425,7 +429,7 @@ section.section-4.full-screen {
 }
 
 h2.overview-heading {
-  font-family: 'Blanka', sans-serif;
+  font-family: 'Blanka' !important;
   font-size: var(--head);
   letter-spacing: 3px;
   text-align: center;
@@ -445,9 +449,9 @@ h2.overview-heading {
   margin: 2rem 0;
 }
 
-h5.service-heading {
+.service-description h4 {
   font-size: clamp(1rem, calc(100vw - 93vw), 2.5rem);
-  font-family: 'viga', sans-serif;
+  font-family: 'Viga', sans-serif;
   font-weight: lighter;
 }
 
@@ -553,7 +557,7 @@ section.section-6 {
   color: var(--grey);
   font-size: var(--head);
   font-weight: bolder;
-  font-family: 'Blanka', sans-serif;
+  font-family: 'Blanka' !important;
   width: min-content;
   letter-spacing: 5px;
   text-align: center;
@@ -822,7 +826,7 @@ section.section-7.full-screen {
   color: var(--gold);
   font-size: var(--head);
   font-weight: bolder;
-  font-family: 'Blanka', sans-serif;
+  font-family: 'Blanka' !important;
   width: min-content;
   letter-spacing: 5px;
   text-align: center;
@@ -1063,7 +1067,7 @@ section.section-8.full-screen {
   color: var(--grey);
   font-size: var(--head);
   font-weight: bolder;
-  font-family: 'Blanka', sans-serif;
+  font-family: 'Blanka' !important;
   width: min-content;
   letter-spacing: 5px;
   text-align: center;
