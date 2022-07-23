@@ -1,8 +1,39 @@
-@media screen and (max-width: 922px) {
+@media screen and (max-width: 480px) {
+    .circle10 {
+        transition-delay: 0.05s;
+        cx: 90%;
+    }
+
+    .circle11 {
+        transition-delay: 0.1s;
+        cx: 90%;
+
+    }
+
+    .circle12 {
+        transition-delay: 0.15s;
+        cx: 90%;
+
+    }
+
+    .circle13 {
+        transition-delay: 0.2s;
+        cx: 90%;
+
+    }
+
+    .circle14 {
+        transition-delay: 0.25s;
+        cx: 90%;
+
+    }
+}
+
+@media screen and (max-width: 820px) {
 
     .section-1-container {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         height: 90%;
         justify-content: space-evenly;
@@ -29,13 +60,11 @@
 
 }
 
+@media screen and (min-width: 820px) {
 
-@media screen and (min-width: 768px) {
     .navigation-menu {
         display: flex;
         align-items: center;
-        /* position: fixed; */
-        /*  uncommnet above code when you use gsap to change color on every section */
     }
 
     .main-navigation {
@@ -47,29 +76,21 @@
         border-radius: 0 0 40pc 40pc;
     }
 
-    /* Hiding the hamburger icon on larger screens */
-
     .hamburger-icon {
         display: none;
     }
 
-    /* Ensuring that if the hamburger menu is active but
-    the screen becomes larger, the display will 
-    change to display items in a row instead of a column*/
-
     #menu-toggle:checked+.main-navigation {
         display: flex;
     }
-}
 
-
-@media screen and (min-width: 992px) {
+    /* SECTION-2 */
 
     .intro-section {
         margin: 5rem;
     }
 
-    h3.intro-head {
+    h2.intro-head {
         font-size: clamp(1rem, calc(100vw - 95vw), 6rem);
     }
 
@@ -93,11 +114,8 @@
         font-size: clamp(1rem, 1.5vw, 4rem);
         line-height: clamp(30px, 2vw, 45px);
     }
-}
 
-
-@media screen and (min-width: 992px) {
-
+    /* SECTION-3 support section  */
     .support-section {
         margin: 5rem;
     }
@@ -129,11 +147,7 @@
         line-height: clamp(30px, 2.5vw, 45px);
     }
 
-}
-
-
-@media screen and (min-width: 992px) {
-
+    /* SECTION-4 service overview */
     .service-overview-contianer {
         margin: 5rem;
     }
@@ -167,10 +181,8 @@
     .check-icon {
         margin-bottom: 2rem;
     }
-}
 
-
-@media screen and (min-width: 992px) {
+    /* SECTION-5 call-to-action */
 
     .call-to-action-section {
         height: auto;
@@ -205,14 +217,8 @@
         font-size: clamp(1rem, 1.5vw, 3rem);
         line-height: clamp(30px, 3vw, 45px);
     }
-}
 
-
-/*=====================================================================================
-                MEDIA QUERIES
-=======================================================================================*/
-@media screen and (min-width: 992px) {
-
+    /* SECTION-6 Team section */
     .team-section-container {
         min-height: auto;
     }
@@ -231,53 +237,9 @@
 
 }
 
+@media screen and (min-width: 900px) {
 
-@media (hover: hover) {
-
-    .left:hover {
-        background-color: transparent;
-    }
-
-    .right:hover {
-        background-color: transparent;
-    }
-
-}
-
-
-@media screen and (max-width: 480px) {
-    .circle10 {
-        transition-delay: 0.05s;
-        cx: 90%;
-    }
-
-    .circle11 {
-        transition-delay: 0.1s;
-        cx: 90%;
-
-    }
-
-    .circle12 {
-        transition-delay: 0.15s;
-        cx: 90%;
-
-    }
-
-    .circle13 {
-        transition-delay: 0.2s;
-        cx: 90%;
-
-    }
-
-    .circle14 {
-        transition-delay: 0.25s;
-        cx: 90%;
-
-    }
-}
-
-@media screen and (min-width: 992px) {
-
+    /* SECTION-7 Portfolio slider */
     .parent {
         width: calc(100vw - 50vw);
         height: calc(100vh - 45vh);
@@ -297,10 +259,8 @@
         margin: 2rem 0 5rem;
     }
 
-}
 
-
-@media screen and (min-width: 992px) {
+    /* SECTION-8 service */
     .services-group-container-1 {
         display: flex;
         width: calc(100vw - 17vw);
@@ -315,10 +275,7 @@
         margin-bottom: 5rem;
     }
 
-}
-
-
-@media screen and (min-width: 992px) {
+    /* SECTION-9 CONTACT US */
 
     .contact-heading h2 {
         font-size: clamp(1rem, calc(100vw - 95vw), 6rem);
@@ -326,7 +283,7 @@
     }
 
     p.contact-para {
-        font-size: clamp(1rem, 1.3rem, 3rem);
+        font-size: clamp(1rem, 1.3vw, 3rem);
         line-height: clamp(30px, 2vw, 45px);
     }
 
@@ -348,6 +305,7 @@
 
     .contact-icon {
         margin: 15px;
+        margin-left: 0;
         font-size: 15px;
     }
 
@@ -366,5 +324,16 @@
 
     .fa-map-marker::before {
         padding: 12px 14px;
+    }
+}
+
+@media (hover: hover) {
+
+    .left:hover {
+        background-color: transparent;
+    }
+
+    .right:hover {
+        background-color: transparent;
     }
 }

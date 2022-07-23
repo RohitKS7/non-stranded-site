@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Blanka";
-   src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot");
-  src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix") format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"), 
-    url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"), 
-    url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"), 
+  src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot");
+  src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka") format("svg");
-/*   font-display: swap; */
+  /*   font-display: swap; */
 }
 
 
@@ -81,7 +81,6 @@ html::-webkit-scrollbar-thumb:hover {
   z-index: 11;
 }
 
-/* Hiding the main navigation until it is clicked */
 
 .main-navigation {
   top: 4rem;
@@ -146,14 +145,34 @@ html::-webkit-scrollbar-thumb:hover {
   position: relative;
 }
 
+.hero-section {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  overflow: hidden;
+
+}
+
+.main-heading {
+  font-family: 'Blanka' !important;
+  width: min-content;
+  text-align: center;
+  font-size: clamp(1rem, 10vw, 10rem);
+  letter-spacing: 5px;
+  color: #eac67f;
+}
+
 /*  cube animation styles are desktop first */
 .cube {
+  position: absolute;
   transform-style: preserve-3d;
   animation: animate 10s linear infinite;
 }
 
 .cube1 {
-  position: absolute;
   width: 150px;
   height: 150px;
   bottom: 6em;
@@ -161,7 +180,6 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .cube2 {
-  position: absolute;
   top: 5em;
   right: 7em;
   width: 100px;
@@ -212,37 +230,23 @@ html::-webkit-scrollbar-thumb:hover {
   /* `200px / 2 = 100px` */
 }
 
-.cube1 div span h2 {
+.cube div span h2 {
   position: absolute;
-  font-size: 3em;
-  font-family: sans-serif;
+  font-family: "Viga", sans-serif;
   color: #fff;
+}
+
+.cube1 div span h2 {
+  font-size: 3em;
   transform: translateZ(45px);
 }
 
-.cube1 div span h2 img {
-  width: 120px;
-}
-
-.cube1 div span h2:nth-child(1) {
-  transform: translateZ(0) translateY(20px);
-  color: rgba(0, 0, 0, 0.1);
-  filter: blur(2px);
-}
-
 .cube2 div span h2 {
-  position: absolute;
   font-size: 2em;
-  font-family: sans-serif;
-  color: #fff;
   transform: translateZ(25px);
 }
 
-.cube2 div span h2 img {
-  width: 80px;
-}
-
-.cube2 div span h2:nth-child(1) {
+.cube div span h2:nth-child(1) {
   transform: translateZ(0) translateY(20px);
   color: rgba(0, 0, 0, 0.1);
   filter: blur(2px);
@@ -270,48 +274,21 @@ html::-webkit-scrollbar-thumb:hover {
   position: absolute;
   top: 0;
   left: 0;
+  filter: blur(20px);
+  box-shadow: 0 0 100px rgb(255 189 89 / 40%), 0 0 150px rgb(255 189 89 / 60%), 0 0 200px rgb(255 189 89 / 80%), 0 0 250px rgb(255 189 89);
+}
+
+.cube1>.top:before {
   width: 150px;
   height: 150px;
-  background: #FFBD59;
   transform: translateZ(-200px);
-  filter: blur(20px);
-  box-shadow: 0 0 50px rgb(235 198 128 / 20%),
-    0 0 100px rgb(235 198 128 / 40%),
-    0 0 150px rgb(235 198 128 / 60%),
-    0 0 200px rgb(235 198 128 / 80%);
 }
 
 .cube2>.top:before {
   width: 100px;
   height: 100px;
   transform: translateZ(-130px);
-  filter: blur(20px);
-  box-shadow: 0 0 50px rgb(235 198 128 / 20%),
-    0 0 100px rgb(235 198 128 / 40%),
-    0 0 150px rgb(235 198 128 / 60%),
-    0 0 200px rgb(235 198 128 / 80%);
 }
-
-.hero-section {
-  position: absolute;
-  z-index: 3;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  overflow: hidden;
-
-}
-
-.main-heading {
-  font-family: 'Blanka' !important;
-  width: min-content;
-  text-align: center;
-  font-size: clamp(1rem, 10vw, 10rem);
-  letter-spacing: 5px;
-  color: #eac67f;
-}
-
 
 
 /* SECTION - Intro section  ///////////////////////*/
@@ -337,7 +314,7 @@ section.section-2 {
   margin-inline: 2rem;
 }
 
-h3.intro-head {
+h2.intro-head {
   font-size: var(--head);
   font-family: 'Viga', sans-serif;
   margin-bottom: 2rem;
@@ -1093,6 +1070,10 @@ section.section-8.full-screen {
   text-align: center;
 }
 
+.service-card.card-5 {
+  margin-bottom: 5em;
+}
+
 .service-card h3 {
   color: var(--gold);
   font-size: clamp(1rem, 1.5vw, 2rem);
@@ -1137,7 +1118,7 @@ section.section-8.full-screen {
 
 p.contact-para {
   padding: 1rem 0;
-  font-size: clamp(1rem, calc(100vw - 95vw), 2rem);
+  font-size: clamp(1rem, calc(100vw - 97vw), 2rem);
   font-family: sans-serif;
   line-height: clamp(30px, 6vw, 45px);
   color: var(--gold);
@@ -1197,7 +1178,7 @@ button.form-btn:hover {
 .contact-info {
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
+  margin-top: 4em;
 }
 
 .contact-icon {
