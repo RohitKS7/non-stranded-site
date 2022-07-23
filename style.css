@@ -1068,6 +1068,54 @@ section.section-8.full-screen {
   justify-content: center;
   align-items: center;
   text-align: center;
+    overflow: hidden;
+  flex-direction: column;
+}
+
+.arrow{
+    transition: all 0.5s ease-out;
+}
+.arrow:hover{
+    transform: translateX(1rem);
+}
+
+span.learn {
+    color: var(--gold);
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: clamp(1rem, 1vw, 2rem);
+    font-family: sans-serif;
+    transition: transform 0.5s linear;
+        transform: translateY(3rem);
+}
+
+span.learn-2{
+    transform: translateY(-2rem);
+}
+
+p.hidden {
+    padding: 1rem 0;
+    font-family: sans-serif;
+    line-height: 25px;
+    color: var(--gold);
+    transform: translateY(15rem);
+    transition: transform 0.5s linear;
+}
+
+p.show {
+    transform: translateY(-1rem);
+}
+
+h3.service-name {
+  color: var(--gold);
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-family: sans-serif;
+    transition: transform 0.5s linear;
+        transform: translateY(3rem);
+}
+
+h3.service-name-new {
+  transform: translateY(-11rem);
 }
 
 .service-card.card-5 {
