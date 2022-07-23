@@ -1,3 +1,15 @@
+const learnMore = document.querySelector(".learn")
+const serviceName = document.querySelector('.service-name')
+const hiddenP = document.querySelector('.hidden')
+
+learnMore.addEventListener("click", ()=>{
+    hiddenP.classList.toggle("show");
+    serviceName.classList.toggle("service-name-new");
+    learnMore.classList.toggle("learn-2")
+    console.log(e)
+})
+
+
 // SECTION portfolio slider
 var curpage = 1;
 var sliding = false;
