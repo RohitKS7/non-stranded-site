@@ -1,3 +1,16 @@
+const learnMore = document.querySelectorAll(".learn")
+
+learnMore.forEach((i) => {
+   i.addEventListener("click", (e)=>{
+     e.target.nextElementSibling.classList.toggle("show")
+     e.target.previousElementSibling.classList.toggle("service-name-new")
+     e.target.classList.toggle("learn-2")
+     console.log(e)
+})
+})
+ 
+
+
 // SECTION portfolio slider
 var curpage = 1;
 var sliding = false;

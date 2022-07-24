@@ -318,7 +318,7 @@
         font-size: clamp(1rem, 1.5vw, 3rem);
     }
 
-    .fas:before {
+    .contact-icon::before {
         padding: 12px;
     }
 
@@ -336,4 +336,8 @@
     .right:hover {
         background-color: transparent;
     }
+
+  span.learn:hover i.arrow{
+    transform: translateX(1rem);
+}
 }

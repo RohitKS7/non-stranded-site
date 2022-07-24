@@ -90,6 +90,7 @@ html::-webkit-scrollbar-thumb:hover {
   padding: 0 20px;
   background: #ebc680;
   z-index: 11111;
+      filter: drop-shadow(0px 0px 6px #000000BF);
   transition: height 0.5s ease-in;
   height: 0;
 }
@@ -121,6 +122,7 @@ html::-webkit-scrollbar-thumb:hover {
   position: relative;
   background: #ebc680;
   text-align: center;
+      filter: drop-shadow(0px 0px 5px #000000BF);
 }
 
 /* Hiding the checkbox */
@@ -163,6 +165,7 @@ html::-webkit-scrollbar-thumb:hover {
   font-size: clamp(1rem, 10vw, 10rem);
   letter-spacing: 5px;
   color: #eac67f;
+      filter: drop-shadow(2px 4px 6px #000000BF);
 }
 
 /*  cube animation styles are desktop first */
@@ -498,6 +501,7 @@ p.call-to-action-para {
   padding: 1rem;
   margin: 0;
   font-family: sans-serif;
+      filter: drop-shadow(2px 2px 6px #00000080);
 }
 
 .call-to-action-btn a:hover {
@@ -1068,17 +1072,69 @@ section.section-8.full-screen {
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+i.arrow{
+    transition: all 0.5s linear;
+}
+
+span.learn {
+    color: var(--gold);
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: clamp(1rem, 1vw, 2rem);
+    font-family: sans-serif;
+    transition: transform 0.5s linear;
+    transform: translateY(3rem);
+}
+
+span.learn:hover {
+    text-decoration: underline;
+}
+
+span.learn-2{
+    transform: translateY(-2rem);
+}
+
+p.service-des{
+    padding-bottom: 1rem;
+}
+.hidden {
+    transform: translateY(15rem);
+    transition: transform 1s linear;
+    padding: 1rem 0;
+    font-family: sans-serif;
+    text-align: left;
+    color: var(--gold);
+}
+
+.hidden ul {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.show {
+    transform: translateY(-1rem);
+}
+
+h3.service-name {
+  color: var(--gold);
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-family: sans-serif;
+    transition: transform 1s linear;
+        transform: translateY(3rem);
+}
+
+h3.service-name-new {
+  transform: translateY(-11rem);
 }
 
 .service-card.card-5 {
   margin-bottom: 5em;
 }
 
-.service-card h3 {
-  color: var(--gold);
-  font-size: clamp(1rem, 1.5vw, 2rem);
-  font-family: sans-serif;
-}
 
 /* SECTION contact */
 .section-9 {
@@ -1168,6 +1224,7 @@ button.form-btn {
   cursor: pointer;
   padding: 10px;
   margin: 30px 0px;
+  filter: drop-shadow(2px 2px 6px #00000080);
 }
 
 button.form-btn:hover {
@@ -1193,11 +1250,12 @@ button.form-btn:hover {
   line-height: clamp(35px, 6vw, 45px);
 }
 
-.fas:before {
+.contact-icon:before {
   color: #1a1d22;
   background: #ebc680;
   padding: 12px 13px;
   border-radius: 50%;
+      filter: drop-shadow(2px 2px 6px #00000080);
 }
 
 .fa-map-marker::before {
