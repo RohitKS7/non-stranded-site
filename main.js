@@ -1,13 +1,14 @@
-const learnMore = document.querySelector(".learn")
-const serviceName = document.querySelector('.service-name')
-const hiddenP = document.querySelector('.hidden')
+const learnMore = document.querySelectorAll(".learn")
 
-learnMore.addEventListener("click", ()=>{
-    hiddenP.classList.toggle("show");
-    serviceName.classList.toggle("service-name-new");
-    learnMore.classList.toggle("learn-2")
-    console.log(e)
+learnMore.forEach((i) => {
+   i.addEventListener("click", (e)=>{
+     e.target.nextElementSibling.classList.toggle("show")
+     e.target.previousElementSibling.classList.toggle("service-name-new")
+     e.target.classList.toggle("learn-2")
+     console.log(e)
 })
+})
+ 
 
 
 // SECTION portfolio slider
