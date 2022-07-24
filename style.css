@@ -45,6 +45,11 @@ p {
   padding: 0;
 }
 
+p{
+  font-family: system-ui;
+  font-weight: 300;
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -105,7 +110,7 @@ html::-webkit-scrollbar-thumb:hover {
   color: #1a1d22;
   text-decoration: none;
   display: inline-block;
-  font-family: sans-serif;
+  font-family: system-ui;
 }
 
 .main-navigation a:hover {
@@ -134,7 +139,7 @@ html::-webkit-scrollbar-thumb:hover {
 /* When the checkbox is ticked, the main navigation will display */
 
 #menu-toggle:checked+.main-navigation {
-  height: 270px;
+  height: 280px;
 }
 
 /* SECTION - 1  */
@@ -173,6 +178,7 @@ html::-webkit-scrollbar-thumb:hover {
   position: absolute;
   transform-style: preserve-3d;
   animation: animate 10s linear infinite;
+  z-index: 1;
 }
 
 .cube1 {
@@ -235,7 +241,7 @@ html::-webkit-scrollbar-thumb:hover {
 
 .cube div span h2 {
   position: absolute;
-  font-family: "Viga", sans-serif;
+  font-family: "Viga", system-ui;
   color: #fff;
 }
 
@@ -293,6 +299,71 @@ html::-webkit-scrollbar-thumb:hover {
   transform: translateZ(-130px);
 }
 
+@keyframes square {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(7) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+      z-index: 0;
+}
+.background li {
+    position: absolute;
+    top: 85vh;
+    left: 54vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #ebc680;
+    color: transparent;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: square 7s ease-in forwards infinite;
+}
+
+.background li:nth-child(1) {
+    animation-delay: 2s;
+    left: 85vw;
+    top: 90vh;
+}
+
+.background li:nth-child(2) {
+    animation-delay: 4s;
+    left: 72vw;
+    top: 65vh;
+}
+
+.background li:nth-child(3) {
+    animation-delay: 6s;
+    left: 93vw;
+    top: 53vh;
+}
+
+.background li:nth-child(4) {
+    animation-delay: 8s;
+    left: 12vw;
+    top: 12vh;
+}
+
+.background li:nth-child(5) {
+    animation-delay: 10s;
+    left: 3vw;
+    top: 50vh;
+}
+
 
 /* SECTION - Intro section  ///////////////////////*/
 
@@ -319,15 +390,13 @@ section.section-2 {
 
 h2.intro-head {
   font-size: var(--head);
-  font-family: 'Viga', sans-serif;
+  font-family: 'Viga', system-ui;
   margin-bottom: 2rem;
 }
 
 .intro-para-container>* {
   padding: 1rem 0;
   font-size: var(--para);
-  font-family: sans-serif;
-  font-weight: 100;
   line-height: clamp(30px, 6vw, 45px);
 }
 
@@ -370,7 +439,7 @@ section.section-3 {
 
 h3.support-head {
   color: var(--gold);
-  font-family: 'Viga', sans-serif;
+  font-family: 'Viga', system-ui;
   font-size: var(--head);
   margin-bottom: 2rem;
 }
@@ -378,7 +447,7 @@ h3.support-head {
 p.support-para {
   padding: 1rem 0;
   font-size: var(--para);
-  font-family: sans-serif;
+       
   line-height: clamp(30px, 6vw, 45px);
   color: var(--gold);
 }
@@ -431,14 +500,14 @@ h2.overview-heading {
 
 .service-description h4 {
   font-size: clamp(1rem, calc(100vw - 93vw), 2.5rem);
-  font-family: 'Viga', sans-serif;
+  font-family: 'Viga', system-ui;
   font-weight: lighter;
 }
 
 p.service-para {
   font-size: clamp(1rem, calc(100vw - 95vw), 1.7rem);
   margin: 20px;
-  font-family: sans-serif;
+       
 }
 
 .check-icon {
@@ -477,7 +546,7 @@ section.section-5.full-screen {
 
 h3.call-to-action-head {
   color: var(--gold);
-  font-family: 'Viga', sans-serif;
+  font-family: 'Viga', system-ui;
   font-size: var(--head);
   margin-bottom: 2rem;
 }
@@ -485,7 +554,7 @@ h3.call-to-action-head {
 p.call-to-action-para {
   padding: 1rem 0;
   font-size: var(--para);
-  font-family: sans-serif;
+       
   line-height: clamp(30px, 6vw, 45px);
   color: var(--gold);
 }
@@ -496,14 +565,14 @@ p.call-to-action-para {
 
 .call-to-action-btn a {
   text-decoration: none;
-  color: var(--grey);
-  background: var(--gold);
-  padding: 1rem;
-  margin: 0;
-  font-family: sans-serif;
-      filter: drop-shadow(2px 2px 6px #00000080);
+    color: var(--gold);
+    background: var(--grey);
+    border: 2px solid var(--gold);
+    padding: 1rem;
+    margin: 0;
+    font-family: system-ui;
+    filter: drop-shadow(2px 2px 6px #00000080);
 }
-
 .call-to-action-btn a:hover {
   color: #fff;
   transition: color 0.3s ease-in;
@@ -1006,7 +1075,7 @@ circle {
   font-size: 62px;
   padding-top: 138px;
   font-weight: 800;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Heebo', system-ui;
   text-align: center;
   width: 25%;
   height: 100%;
@@ -1074,6 +1143,8 @@ section.section-8.full-screen {
   text-align: center;
   overflow: hidden;
   flex-direction: column;
+   font-family: system-ui;
+  font-weight: 300;
 }
 
 i.arrow{
@@ -1085,7 +1156,7 @@ span.learn {
     margin-top: 1rem;
     cursor: pointer;
     font-size: clamp(1rem, 1vw, 2rem);
-    font-family: sans-serif;
+         
     transition: transform 0.5s linear;
     transform: translateY(3rem);
 }
@@ -1105,7 +1176,7 @@ p.service-des{
     transform: translateY(15rem);
     transition: transform 1s linear;
     padding: 1rem 0;
-    font-family: sans-serif;
+         
     text-align: left;
     color: var(--gold);
 }
@@ -1122,7 +1193,7 @@ p.service-des{
 h3.service-name {
   color: var(--gold);
   font-size: clamp(1rem, 1.5vw, 2rem);
-  font-family: sans-serif;
+       
     transition: transform 1s linear;
         transform: translateY(3rem);
 }
@@ -1167,7 +1238,7 @@ h3.service-name-new {
 
 .contact-heading h2 {
   color: var(--gold);
-  font-family: 'Viga', sans-serif;
+  font-family: 'Viga', system-ui;
   font-size: var(--head);
   margin-bottom: 2rem;
 }
@@ -1175,14 +1246,14 @@ h3.service-name-new {
 p.contact-para {
   padding: 1rem 0;
   font-size: clamp(1rem, calc(100vw - 97vw), 2rem);
-  font-family: sans-serif;
+       
   line-height: clamp(30px, 6vw, 45px);
   color: var(--gold);
 }
 
 .contact-form-heading h3 {
   color: var(--gold);
-  font-family: 'Viga', sans-serif;
+  font-family: 'Viga', system-ui;
   font-size: var(--head);
   margin-top: 5rem;
 }
@@ -1190,7 +1261,7 @@ p.contact-para {
 .contact-form-para h4 {
   padding: 1rem 0;
   font-size: var(--para);
-  font-family: sans-serif;
+ font-family: system-ui;
   color: var(--gold);
 }
 
@@ -1223,6 +1294,7 @@ button.form-btn {
   background: #ebc680;
   cursor: pointer;
   padding: 10px;
+      font-family: system-ui;
   margin: 30px 0px;
   filter: drop-shadow(2px 2px 6px #00000080);
 }
@@ -1246,7 +1318,7 @@ button.form-btn:hover {
 
 .contact-icon span+span {
   color: #696a6b;
-  font-family: sans-serif;
+       
   line-height: clamp(35px, 6vw, 45px);
 }
 
@@ -1263,5 +1335,58 @@ button.form-btn:hover {
 }
 
 .contact-icon span {
-  font-family: sans-serif;
+   font-family: system-ui;
+  font-weight: 300;
+}
+
+/*SECTION-10 footer  */
+
+footer.section-10 {
+    background: var(--gold);
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    color: var(--grey);
+}
+
+footer.section-10 .container {
+    margin: 0rem 4rem 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .logo {
+    margin: 4rem 0 2rem;
+}
+
+.box {
+    font-family: system-ui;
+  margin-bottom: 2rem;
+}
+
+.box h4 {
+    margin: 1rem 0;
+}
+
+.box ul li {
+    list-style-type: none;
+    line-height: 1.5rem;
+}
+
+.social-icons {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 2rem;
+}
+
+.legal {
+    font-size: 12px;
 }
