@@ -459,31 +459,26 @@ p.support-para {
 
 
 
-/*  section 4 */
+/*  SECTION - 4 */
 
 section.section-4.full-screen {
   background: var(--gold);
-  ;
   display: flex;
   height: auto;
   justify-content: center;
   color: var(--grey);
 }
 
-.service-overview-section {
+.approach-section {
   height: auto;
 }
 
-.service-overview-contianer {
+.approach-contianer {
   display: flex;
   flex-direction: column;
 }
 
-.overview-head {
-  margin: 3rem 0rem;
-}
-
-h2.overview-heading {
+h2.approach-heading {
   font-family: 'Blanka' !important;
   font-size: var(--head);
   letter-spacing: 3px;
@@ -491,36 +486,102 @@ h2.overview-heading {
   margin-top: 3rem;
 }
 
-.service-check-container {
+h2.approach-heading~p {
+  font-size: clamp(1rem, calc(100vw - 94vw), 2rem);
+  text-align: center;
+  margin: 4rem 2rem;
+  font-family: none;
+}
+
+.dish-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.overview-head {
-  margin: 3rem 0rem;
-}
-
-.web-dev-check {
-  text-align: center;
+.dish {
   margin: 2rem 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.service-description h4 {
-  font-size: clamp(1rem, calc(100vw - 93vw), 2.5rem);
-  font-family: 'Viga', system-ui;
-  font-weight: lighter;
+.dish-icons::before {
+  font-size: 6rem;
+  filter: drop-shadow(-15px 4px 0px #00000060);
 }
 
-p.service-para {
-  font-size: clamp(1rem, calc(100vw - 95vw), 1.7rem);
-  margin: 20px;
-
+.dish-icons {
+  position: relative;
+  animation: hu__hu__ infinite 2s ease-in-out;
 }
 
-.check-icon {
-  margin-bottom: 1rem;
+@keyframes hu__hu__ {
+  50% {
+    transform: translateY(10px);
+  }
 }
 
+.dish-icons span {
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -70%);
+}
+
+.dish-icons span i::before {
+  font-size: 2rem;
+  background: #ebc680;
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--grey);
+}
+
+.dish-desc-container {
+  display: none;
+}
+
+.dish h4 {
+  margin: 2rem 0;
+  font-family: 'Viga';
+  font-size: var(--para);
+}
+
+.dish p {
+  margin: 0 1rem;
+  font-size: clamp(1rem, calc(100vw - 97vw), 2rem);
+}
+
+.dish_4 {
+  margin-bottom: 4rem;
+}
+
+.dish-icons::after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: -2rem;
+  font-family: "Viga";
+}
+
+.dish_icon_1::after {
+  content: "Week 0-1";
+}
+
+.dish_icon_2::after {
+  content: "Week 2-4";
+}
+
+.dish_icon_3::after {
+  content: "Week 5-16";
+}
+
+.dish_icon_4::after {
+  content: "Week 17-18";
+}
 
 
 /*  SECTION 5 */
@@ -565,26 +626,21 @@ p.call-to-action-para {
   color: var(--gold);
 }
 
+a.call-to-action-anchor {
+  text-decoration: none;
+}
+
 .call-to-action-btn {
   margin-top: 2rem;
   width: fit-content;
-  transition: all 0.5s;
+  transition: all 0.5s linear;
+  color: var(--grey);
   padding: 1rem;
   background: #ffbd59;
   margin: 0;
   cursor: pointer;
   font-family: system-ui;
   filter: drop-shadow(2px 2px 6px #00000080);
-}
-
-.call-to-action-btn a {
-  text-decoration: none;
-  color: var(--grey);
-}
-
-.call-to-action-btn:hover {
-  background: #ffbd59;
-  transform: scale(0.90);
 }
 
 .call-to-action-contianer-img {
@@ -1112,7 +1168,7 @@ circle {
 }
 
 
-/* Section-8 => Services section */
+/* SECTION -8 => Services section */
 
 section.section-8.full-screen {
   background: var(--gold);
@@ -1168,12 +1224,10 @@ span.learn {
   transform: translateY(10rem);
 }
 
-span.learn:hover {
-  text-decoration: underline;
-}
-
 span.learn-2 {
   transform: translateY(0rem);
+  text-decoration: underline;
+  color: white;
 }
 
 p.service-des {
@@ -1183,7 +1237,6 @@ p.service-des {
 .hidden {
   transform: translateY(20rem);
   transition: transform 1s linear;
-  padding: 1rem 0;
   text-align: left;
   color: var(--gold);
 }
@@ -1304,14 +1357,17 @@ button.form-btn {
   background: #ebc680;
   cursor: pointer;
   padding: 10px;
+  transition: all 0.3s ease-in;
   font-family: system-ui;
   margin: 30px 0px;
   filter: drop-shadow(2px 2px 6px #00000080);
 }
 
 button.form-btn:hover {
-  color: #fff;
-  transition: color 0.3s ease-in;
+  background: var(--grey);
+  transform: scale(0.95);
+  color: white;
+  border: 2px solid var(--gold);
 }
 
 .contact-info {
@@ -1384,6 +1440,11 @@ footer.section-10 .container {
 .box ul li {
   list-style-type: none;
   line-height: 1.5rem;
+  cursor: pointer;
+}
+
+.box ul li:hover {
+  color: white;
 }
 
 .social-icons {
@@ -1398,104 +1459,11 @@ footer.section-10 .container {
   font-size: 2rem;
 }
 
+
+.iconX:hover {
+  color: white;
+}
+
 .legal {
   font-size: 12px;
-}
-
-h2.overview-heading~p {
-  font-size: clamp(1rem, calc(100vw - 94vw), 2rem);
-  text-align: center;
-  margin: 4rem 2rem;
-  font-family: none;
-}
-
-.dish-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.dish {
-  margin: 2rem 0;
-  text-align: center;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.dish-icons::before {
-  font-size: 6rem;
-  filter: drop-shadow(-15px 4px 0px #00000060);
-}
-
-.dish-icons {
-  position: relative;
-  animation: hu__hu__ infinite 2s ease-in-out;
-}
-
-@keyframes hu__hu__ {
-  50% {
-    transform: translateY(10px);
-  }
-}
-
-.dish-icons span {
-  position: absolute;
-  color: white;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -70%);
-}
-
-.dish-icons span i::before {
-  font-size: 2rem;
-  background: #ebc680;
-  padding: 10px;
-  border-radius: 50%;
-  color: var(--grey);
-}
-
-.dish-desc-container {
-  display: none;
-}
-
-.dish h4 {
-  margin: 2rem 0;
-  font-family: 'Viga';
-  font-size: var(--para);
-}
-
-.dish p {
-  margin: 0 1rem;
-  font-size: clamp(1rem, calc(100vw - 97vw), 2rem);
-}
-
-.dish_4 {
-  margin-bottom: 4rem;
-}
-
-.dish-icons::after {
-  content: "";
-  position: absolute;
-  left: 1rem;
-  top: -2rem;
-  font-family: "Viga";
-}
-
-
-.dish_icon_1::after {
-  content: "Week 0-1";
-}
-
-.dish_icon_2::after {
-  content: "Week 2-4";
-}
-
-.dish_icon_3::after {
-  content: "Week 5-16";
-}
-
-.dish_icon_4::after {
-  content: "Week 17-18";
 }

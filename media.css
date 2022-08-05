@@ -156,15 +156,9 @@
         line-height: clamp(30px, 2.5vw, 45px);
     }
 
-    /* SECTION-4 service overview */
-    .service-overview-contianer {
-        margin: 5rem;
-    }
-
-    .overview-head {
-        margin: 0 0 5rem;
-        display: flex;
-        justify-content: center;
+    /* SECTION-4 approach */
+    .approach-contianer {
+        margin: 4rem;
     }
 
     .service-check-container {
@@ -179,12 +173,13 @@
         height: 7rem;
     }
 
-    h2.overview-heading {
+    h2.approach-heading {
         margin: 0;
     }
 
-    h2.overview-heading~p {
-        font-size: clamp(1rem, calc(100vw - 94vw), 3rem);
+    h2.approach-heading~p {
+        font-size: clamp(1rem, calc(100vw - 96vw), 4rem);
+        margin: 4rem 14rem;
     }
 
     p.service-para {
@@ -447,4 +442,18 @@
     span.learn:hover i.arrow {
         transform: translateX(1rem);
     }
+
+
+    span.learn:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+    .call-to-action-btn:hover {
+        background: var(--grey);
+        transform: scale(0.95);
+        color: white;
+        border: 2px solid var(--gold);
+    }
+
 }
