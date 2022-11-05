@@ -722,7 +722,21 @@ section.section-6 {
   width: 100px;
   border-radius: 50%;
   border: 13px solid #3b344d;
-  margin-bottom: 1rem;
+}
+
+.test-social-icons {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.test-social-icons a {
+  text-decoration: none;
+  color: var(--gold);
+  font-size: 2rem;
+}
+.test-social-icons > * {
+  padding: 0rem 1rem;
 }
 
 .testimonials .item p {
@@ -1208,7 +1222,7 @@ section.section-8.full-screen {
   flex-direction: column;
   font-family: system-ui;
   font-weight: 300;
-  font-size: clamp(1rem, calc(100vw - 97vw), 2rem);
+  font-size: clamp(1rem, calc(100vh - 98vh), 2rem);
 }
 
 i.arrow {
@@ -1219,13 +1233,12 @@ span.learn {
   color: var(--gold);
   margin-top: 1rem;
   cursor: pointer;
-  font-size: clamp(1rem, 1vw, 2rem);
   transition: transform 0.5s linear;
   transform: translateY(10rem);
 }
 
 span.learn-2 {
-  transform: translateY(0rem);
+  transform: translateY(-2rem);
   text-decoration: underline;
   color: white;
 }
@@ -1251,14 +1264,14 @@ p.service-des {
 }
 
 .show {
-  transform: translateY(2rem);
+  transform: translateY(0rem);
 }
 
 h3.service-name {
   color: var(--gold);
-  font-size: clamp(1rem, calc(100vw - 96vw), 2rem);
+  font-size: clamp(1rem, calc(100vh - 97vh), 2rem);
   transition: transform 1s linear;
-  transform: translateY(8rem);
+  transform: translateY(7rem);
 }
 
 h3.service-name-new {

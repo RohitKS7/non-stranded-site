@@ -281,6 +281,10 @@
     width: 450px;
   }
 
+  .test-social-icons {
+    justify-content: center;
+  }
+
   .head {
     margin: 3rem 1rem 5rem 1rem;
   }
@@ -327,13 +331,14 @@
   }
 
   .service-card {
-    font-size: 1rem;
-    height: calc(50vh - 20vh);
+    font-size: clamp(0.8rem, 1vh, 2rem);
+    height: calc(50vh - 15vh);
     font-weight: unset;
   }
 
   span.learn {
     transform: translateY(7rem);
+    font-size: clamp(0.8rem, 1vh, 2rem);
   }
 
   span.learn-2 {
@@ -341,11 +346,12 @@
   }
 
   .show {
-    transform: translateY(1rem);
+    transform: translateY(0rem);
   }
 
   h3.service-name {
     transform: translateY(5rem);
+    font-size: clamp(1rem, calc(100vh - 97vh), 2rem);
   }
 
   h3.service-name-new {
